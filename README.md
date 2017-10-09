@@ -1,6 +1,7 @@
 # proj-backend
 
-O progeto e composto pelos integrantes:
+O projeto e composto pelos integrantes:
+
 - Giomerito Alves
 
 O sistema terá dois projetos nomes:
