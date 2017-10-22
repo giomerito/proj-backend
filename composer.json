@@ -1,21 +1,21 @@
 {
-    "name": "proj-reserva",
+    "name": "Reserva",
     "authors": [
         {
             "name": "giomerito",
             "email": "giomerito.souza@gmail.com"
         }
     ],
-    "require":{
+    "require": {
         "slim/slim": "^2.6",
         "doctrine/orm": "^2.5"       
     },
     "require-dev": {
-        
+
     },
     "autoload": {
         "psr-4": {
             "Reserva\\": "src/Reserva"
         }
-    }    
+    }
 }

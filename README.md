@@ -6,7 +6,7 @@ O projeto e composto pelos integrantes:
 
 O sistema terá dois projetos nomes:
 
-- proj-reserva
+- Reserva
 - proj-hotel
 
 ## Primeiro projeto 'proj-reserva'
