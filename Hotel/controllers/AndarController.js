@@ -2,8 +2,8 @@ var Andar = require('../models/Andar');
 
 exports.save = function(andar, qtd_quartos, callback){
     new Andar({
-      'andar': '1',
-      'qtd_quartos' : 12      
+      'andar': andar,
+      'qtd_quartos' : qtd_quartos      
     }).save(function(error, andar){
         if(error){
             callback({error: 'Não foi possivel salvar'});

@@ -3,7 +3,7 @@ var router = express.Router();
 var QuartoController = require('../controllers/QuartoController');
 
 
-router.get('/', function(req, res){
+router.get('/lista', function(req, res){
     QuartoController.list(function(resp){
         res.json(resp);
     });

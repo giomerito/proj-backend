@@ -3,7 +3,7 @@ var router = express.Router();
 var AndarController = require('../controllers/AndarController');
 
 
-router.get('/', function(req, res){
+router.get('/lista', function(req, res){
     AndarController.list(function(resp){
         res.json(resp);
     });

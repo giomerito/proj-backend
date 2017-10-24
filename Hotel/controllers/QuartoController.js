@@ -2,9 +2,9 @@ var Quarto = require('../models/Quarto');
 
 exports.save = function(quarto, descricao, andar_id, callback){
     new Quarto({
-      'quarto': '1',
-      'descricao' : 'solteiro',
-      'andar_id': 2
+      'quarto': quarto,
+      'descricao' : descricao,
+      'andar_id': andar_id
     }).save(function(error, quarto){
         if(error){
             callback({error: 'Não foi possivel salvar'});
@@ -17,7 +17,7 @@ exports.save = function(quarto, descricao, andar_id, callback){
 exports.list = function(callback){
     Quarto.find({}, function(error, quartos){
         if(error){
-            callback({error: 'Não foi possivel encontrar o quarto!'});
+            callback({error: 'Não foi possivel encontrar!'});
         }else{
             callback(quartos);
         }
