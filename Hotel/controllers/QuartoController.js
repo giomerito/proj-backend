@@ -2,8 +2,8 @@ var Quarto = require('../models/Quarto');
 
 exports.save = function(quarto, descricao, andar_id, callback){
     new Quarto({
-      'quarto': 1,
-      'descricao' : Uma cama solteiro,
+      'quarto': '1',
+      'descricao' : 'solteiro',
       'andar_id': 2
     }).save(function(error, quarto){
         if(error){

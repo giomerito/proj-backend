@@ -1,20 +1,19 @@
 var express = require('express');
 var router = express.Router();
-var QuartoController = require('../controllers/QuartoController');
+var AndarController = require('../controllers/AndarController');
 
 
 router.get('/', function(req, res){
-    QuartoController.list(function(resp){
+    AndarController.list(function(resp){
         res.json(resp);
     });
 });
 
 router.post('/incluir', function(req, res){
-    var quarto = req.body.quarto;
-    var descricao = req.body.descricao;;
-    var andar_id = req.body.andar_id;
+    var andar = req.body.andar;
+    var qtd_quartos = req.body.qtd_quartos;    
 
-    QuartoController.save(quarto, descricao, andar_id, function(resp){
+    AndarController.save(andar, qtd_quartos, function(resp){
         res.json(resp);
     });
 });
@@ -22,7 +21,7 @@ router.post('/incluir', function(req, res){
 router.delete('/delete/:id', function(req, res){
     var id = req.params.id;
 
-    QuartoController.delete(id, function(resp){
+    AndarController.delete(id, function(resp){
         res.json(resp);
     });
   });
