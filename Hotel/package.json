@@ -1,0 +1,20 @@
+{
+  "name": "Hotel",
+  "version": "1.0.0",
+  "keywords": [
+    "util",
+    "functional",
+    "server",
+    "client",
+    "browser"
+  ],
+  "main": "main.js",
+  "author": "Gio",
+  "contributors": [],
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongodb": "^2.2.33",
+    "mongoose": "^4.12.4"
+  }
+}

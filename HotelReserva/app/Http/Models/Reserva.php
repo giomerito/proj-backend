@@ -34,7 +34,7 @@ class Reserva extends Authenticatable {
     }
 
     public function updateReserva($id) {
-        $reserva = self::find($id);
+        $reserva = Self::find($id);
         if (is_null($reserva)) {
             return false;
         }
@@ -45,7 +45,7 @@ class Reserva extends Authenticatable {
     }
 
     public function deleteReserva($id) {
-        $reserva = self::find($id);
+        $reserva = Self::find($id);
         if (is_null($reserva)) {
             return false;
         }

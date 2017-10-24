@@ -18,13 +18,21 @@ Route::group(['prefix' => 'api'], function() {
         Route::put('{id}', ['uses' => 'UserController@updateUser']);
         Route::delete('{id}', ['uses' => 'UserController@deleteUser']);
     });
-    
+
     Route::group(['prefix' => 'reserva'], function(){
         Route::get('', ['uses' => 'ReservaController@allReservas']);
         Route::get('{id}', ['uses' => 'ReservaController@getReserva']);
         Route::post('', ['uses' => 'ReservaController@saveReserva']);
         Route::put('{id}', ['uses' => 'ReservaController@updateReserva']);
         Route::delete('{id}', ['uses' => 'ReservaController@deleteReserva']);
+    });
+
+    Route::group(['prefix' => 'cliente'], function(){
+        Route::get('', ['uses' => 'ClienteController@allClientes']);
+        Route::get('{id}', ['uses' => 'ClienteController@getCliente']);
+        Route::post('', ['uses' => 'ClienteController@saveCliente']);
+        Route::put('{id}', ['uses' => 'ClienteController@updateCliente']);
+        Route::delete('{id}', ['uses' => 'ClienteController@deleteCliente']);
     });
 });
 
