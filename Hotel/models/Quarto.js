@@ -4,7 +4,7 @@ var Schema = mongoose.Schema;
 var QuartoSchema = new Schema({
     quarto: String,
     descricao: String,
-    andar_id: Number    
+    andar: Number
 });
 
 module.exports = mongoose.model('Quarto', QuartoSchema);

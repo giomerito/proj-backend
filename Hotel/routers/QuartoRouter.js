@@ -12,9 +12,9 @@ router.get('/lista', function(req, res){
 router.post('/incluir', function(req, res){
     var quarto = req.body.quarto;
     var descricao = req.body.descricao;;
-    var andar_id = req.body.andar_id;
+    var andar = req.body.andar;
 
-    QuartoController.save(quarto, descricao, andar_id, function(resp){
+    QuartoController.save(quarto, descricao, andar, function(resp){
         res.json(resp);
     });
 });
