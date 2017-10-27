@@ -6,34 +6,20 @@ O projeto e composto pelos integrantes:
 
 O sistema terá dois projetos nomes:
 
-- Reserva
-- proj-hotel
+- Hotel - linguagem nodeJS
+- ReservaHotel - linguagem PHP
 
-## Primeiro projeto 'proj-reserva'
+## Primeiro projeto 'ReservaHotel'
 
 Este projeto será implementado na linguagem:
 
 - PHP
 
-Será usado os frameworks:
+Será usado o framework:
 
-- Doctrine para persistência dos dados no banco
-- Slim para as requisições Rest
+- Laravel
 
 Com o auxilio da ferramenta:
 
 - Composer
-
-Este projeto tera a seguite estrutura:
-
-- Src
-  - Reserva
-    - entidade
-      - cliente
-      - reserva
-      - pagamento
-    - persistencia
-      - AbstractDAO
-      - ClienteDAO
-      - ReservaDAO
-      - PagamentoDAO
+- Artisan
