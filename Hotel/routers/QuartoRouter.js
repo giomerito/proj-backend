@@ -3,28 +3,29 @@ var router = express.Router();
 var QuartoController = require('../controllers/QuartoController');
 
 
-router.get('/lista', function(req, res){
-    QuartoController.list(function(resp){
+router.get('', function (req, res) {
+    QuartoController.list(function (resp) {
         res.json(resp);
     });
 });
 
-router.post('/incluir', function(req, res){
+router.post('', function (req, res) {
     var quarto = req.body.quarto;
-    var descricao = req.body.descricao;;
+    var descricao = req.body.descricao;
     var andar = req.body.andar;
+    var status = req.body.status;
 
-    QuartoController.save(quarto, descricao, andar, function(resp){
+    QuartoController.save(quarto, descricao, andar, status, function (resp) {
         res.json(resp);
     });
 });
 
-router.delete('/delete/:id', function(req, res){
+router.delete('/:id', function (req, res) {
     var id = req.params.id;
 
-    QuartoController.delete(id, function(resp){
+    QuartoController.delete(id, function (resp) {
         res.json(resp);
     });
-  });
+});
 
 module.exports = router;

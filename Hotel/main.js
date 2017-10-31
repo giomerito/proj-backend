@@ -10,6 +10,6 @@ app.get('', function(req, res){
 });
 
 //Rotas dos quartos
-app.use('/quartos', quarto);
-app.use('/andares', andar);
+app.use('/quarto', quarto);
+app.use('/andar', andar);
 app.use('/hotel', servico);

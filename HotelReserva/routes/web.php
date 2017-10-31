@@ -34,6 +34,12 @@ Route::group(['prefix' => 'api'], function() {
         Route::put('{id}', ['uses' => 'ClienteController@updateCliente']);
         Route::delete('{id}', ['uses' => 'ClienteController@deleteCliente']);
     });
+
+    Route::group(['prefix' => 'hotel'], function(){
+        Route::get('', ['uses' => 'hotelService@getQuartos']);
+        Route::get('{id}', ['uses' => 'hotelService@getQuarto']);
+        Route::post('', ['uses' => 'hotelService@postHotel']);
+    });
 });
 
 

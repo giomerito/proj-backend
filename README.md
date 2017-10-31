@@ -37,3 +37,10 @@ Este projeto tera a seguite estrutura:
       - ClienteDAO
       - ReservaDAO
       - PagamentoDAO
+
+
+## Autenticação JWT
+- https://scotch.io/tutorials/authenticate-a-node-js-api-with-json-web-tokens
+
+## outros links
+- http://www.js-data.io/docs/js-data-http      

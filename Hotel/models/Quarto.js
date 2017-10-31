@@ -4,7 +4,8 @@ var Schema = mongoose.Schema;
 var QuartoSchema = new Schema({
     quarto: String,
     descricao: String,
-    andar: Number
+    andar: Number,
+    status: String, 
 });
 
 module.exports = mongoose.model('Quarto', QuartoSchema);

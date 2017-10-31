@@ -1,10 +1,11 @@
 var Quarto = require('../models/Quarto');
 
-exports.save = function(quarto, descricao, andar, callback){
+exports.save = function(quarto, descricao, andar, status, callback){
     new Quarto({
       'quarto': quarto,
       'descricao' : descricao,
-      'andar': andar
+      'andar': andar,
+      'status': status,
     }).save(function(error, quarto){
         if(error){
             callback({error: 'Não foi possivel salvar'});
