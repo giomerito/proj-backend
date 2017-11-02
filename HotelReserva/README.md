@@ -35,5 +35,5 @@ depois disto e por ultimo o comando:
 
 Para rodar o sistema, se tudo der certo estará rodando na porta 8000
 
-- Http:localhost:8000/api/reserva para controlar as reservas
-- Http:localhost:8000/api/cliente para controlar os clientes
+- Http://localhost:8000/api/reserva para controlar as reservas
+- Http://localhost:8000/api/cliente para controlar os clientes
