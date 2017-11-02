@@ -5,7 +5,7 @@ exports.save = function(quarto, descricao, andar, status, callback){
       'quarto': quarto,
       'descricao' : descricao,
       'andar': andar,
-      'status': status,
+      'status': status
     }).save(function(error, quarto){
         if(error){
             callback({error: 'Não foi possivel salvar'});
@@ -13,7 +13,7 @@ exports.save = function(quarto, descricao, andar, status, callback){
             callback(quarto);
         }
     });
-}
+},
 
 exports.list = function(callback){
     Quarto.find({}, function(error, quartos){
@@ -23,7 +23,7 @@ exports.list = function(callback){
             callback(quartos);
         }
     });
-}
+},
 
 exports.delete = function(id, callback){
     Quarto.findById(id, function(error, quarto){
@@ -37,4 +37,4 @@ exports.delete = function(id, callback){
             });
         }
     });
-}
+};

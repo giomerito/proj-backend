@@ -19,7 +19,7 @@ Route::group(['prefix' => 'api'], function() {
         Route::delete('{id}', ['uses' => 'UserController@deleteUser']);
     });
 
-    Route::group(['prefix' => 'reserva'], function(){
+    Route::group(['prefix' => 'reserva'], function() {
         Route::get('', ['uses' => 'ReservaController@allReservas']);
         Route::get('{id}', ['uses' => 'ReservaController@getReserva']);
         Route::post('', ['uses' => 'ReservaController@saveReserva']);
@@ -27,7 +27,7 @@ Route::group(['prefix' => 'api'], function() {
         Route::delete('{id}', ['uses' => 'ReservaController@deleteReserva']);
     });
 
-    Route::group(['prefix' => 'cliente'], function(){
+    Route::group(['prefix' => 'cliente'], function() {
         Route::get('', ['uses' => 'ClienteController@allClientes']);
         Route::get('{id}', ['uses' => 'ClienteController@getCliente']);
         Route::post('', ['uses' => 'ClienteController@saveCliente']);
@@ -35,7 +35,7 @@ Route::group(['prefix' => 'api'], function() {
         Route::delete('{id}', ['uses' => 'ClienteController@deleteCliente']);
     });
 
-    Route::group(['prefix' => 'hotel'], function(){
+    Route::group(['prefix' => 'hotel'], function() {
         Route::get('', ['uses' => 'hotelService@getQuartos']);
         Route::get('{id}', ['uses' => 'hotelService@getQuarto']);
         Route::post('', ['uses' => 'hotelService@postHotel']);
@@ -45,15 +45,15 @@ Route::group(['prefix' => 'api'], function() {
 
 
 /*
-Route::get('docs', function(){
-    return view::make('api.docs.index');
-});
+  Route::get('docs', function(){
+  return view::make('api.docs.index');
+  });
 
-App::missing(function(){
-    return Redirect::to('docs');
-});
-*/
-Route::get('', function(){
+  App::missing(function(){
+  return Redirect::to('docs');
+  });
+ */
+Route::get('', function() {
     return view('welcome');
 });
 

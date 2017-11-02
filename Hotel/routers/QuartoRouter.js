@@ -9,6 +9,13 @@ router.get('', function (req, res) {
     });
 });
 
+router.get('/:id', function (req, res) {
+    var id = req.params.id;
+    QuartoController.list(id, function (resp) {
+        res.json(resp);
+    });
+});
+
 router.post('', function (req, res) {
     var quarto = req.body.quarto;
     var descricao = req.body.descricao;

@@ -34,7 +34,7 @@ class HotelService extends BaseController {
     }
     
     public function getQuarto($id) {
-        $url = "http://localhost:1586/quarto/" . $id;   
+        $url = "http://localhost:1586/quarto" ."/". $id;   
         
         $ch = curl_init(); 
         
@@ -45,27 +45,7 @@ class HotelService extends BaseController {
         curl_close($ch);
         
        echo $return;
-    }
+    }    
     
-    public function postHotel(){
-        
-        $hotel = array(
-            'quarto' => 10,
-            'descricao' => 'casal',
-            'andar' => 1,
-            'status' => 'disponivel'
-        );
-        
-        $url = "http://localhost:1586/quarto";
-        
-        $ch = curl_init();
-        
-        curl_setopt($ch, CURLOPT_URL, $url);
-        curl_setopt($ch, CURLOPT_POST, true);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $hotel);
-        
-        curl_exec($ch);        
-        curl_close();
-    }
 
 }
