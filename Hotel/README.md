@@ -3,7 +3,7 @@
 ## Para rodar o sistema
 é preciso ter o node instalado na maquina caso já tenha execute o comando abaixo:
  
-'npm install'
+npm install
 
 caso não tenho segue o link para o node que já vem com o npm instalado, depois é só rodar o comando
 
