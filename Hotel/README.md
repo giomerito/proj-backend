@@ -11,6 +11,8 @@ caso não tenho segue o link para o node que já vem com o npm instalado, depois
 
 ai o npm istalará todas as dependências do sistema que estará no arquivo package.json
 
+É preciso instalar o MongoDB Link -> <a href="https://baixar.freedownloadmanager.org/Windows-PC/MongoDB/GRATUITO-3.2.7.html">mongodb</a>
+
 Depois de feito é só executar no terminal o comando
 
 - npm run dev
